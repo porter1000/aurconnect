@@ -1,0 +1,243 @@
+/* General Body Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #FAFAFA; /* Light gray background for a clean look */
+    margin: 0;
+    padding: 0;
+    color: #363636; /* Darker text for contrast */
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover, .navbar a:focus {
+    opacity: 0.3;
+    border-radius: 4px;
+}
+
+/* Container for Main Content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+.btn-primary {
+    background-color: #00A859; /* Base color for button */
+    background-image: linear-gradient(to right, #5cf2ac, #047d44); /* Gradient effect */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0f804b; /* Darker shade for hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Form Styles */
+form {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+    background-color: #00A859; /* A cheerful yellow for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0f804b; /* Darker yellow for hover */
+}
+
+/* List Styles */
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+
+
+.alert-info {
+    background-color: #00A859; /* Calm cyan for informational messages */
+}
+/* General button styling */
+.btn {
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid transparent; /* Border made transparent but can be set to a color */
+    font-size: 0.9em; /* Font size */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Like button styling */
+.like-button {
+    background-color: #38c172; /* Green background */
+    color: white; /* White text */
+    border-color: #38c172; /* Green border */
+}
+
+.like-button:hover, .like-button:focus {
+    background-color: #30a462; /* Darker green on hover/focus */
+}
+
+/* Reply button styling */
+.reply-button {
+    background-color: #38c172; /* Lighter green background */
+    color: white; /* White text */
+    border-color: #38c172; /* Lighter green border */
+}
+
+.reply-button:hover, .reply-button:focus {
+    background-color: #30a462; /* Darker shade of light green on hover/focus */
+}
+
+/* Additional styling for disabled state, if needed */
+.btn:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+
+
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.autocomplete-items div:hover {
+    background-color: #F5F5F5; /* Light gray for hover */
+}
+
+/* Style for the profile picture container */
+.profile-picture-container {
+    text-align: center;
+}
+
+/* Style for the profile picture */
+.profile-picture {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circular image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 2px solid #fff; /* Add a white border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Style for the "No profile picture available" message */
+.no-picture-message {
+    font-size: 16px;
+    color: #777;
+}
+
+
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+/* Style for profile pictures */
+.user-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-profile {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+.user-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* Center the image vertically */
+}
+
+/* Additional styling for profile pictures within replies */
+.user-reply .user-profile {
+    width: 30px; /* Adjust the width for reply profile pictures */
+    height: 30px; /* Adjust the height for reply profile pictures */
+    border-width: 1px; /* Add a thin border */
+    box-shadow: none; /* Remove shadow for reply profile pictures */
+}
+
+.user-reply .user-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* Center the image vertically */
+}
+
+
+.text-muted {
+    font-size: 14px;
+}
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
